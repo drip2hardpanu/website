@@ -35,6 +35,11 @@ body{
     min-height: 400px;
 }
 
+.description {
+    padding: 10px 10%;
+    height: 80vh;
+}
+
 .container_2{
     padding: 10px 10%;
     height: 80vh;
@@ -335,6 +340,7 @@ body{
     display: inline-block;
     background: #4a536b;
 }
+
 .contact-right form{
     width: 100%;
 }
@@ -367,3 +373,111 @@ form .btn2:hover{
     display: block;
 }
 
+/*research page*/
+.page_header {
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+
+}
+.container_research{
+    padding: .5em 10%;
+}
+
+h1.page_header{
+    font: 20px;
+
+}
+
+ul.bp {
+    list-style-type: square;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+h1.lab{
+    color:#ff9a8d;
+}
+
+li.title{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: .25em;
+}
+
+a.title_link{
+    font-weight: bold;
+    font-size: large;
+}
+
+a.title_link:hover{
+    color:#aed6dc;
+    transition:.5s
+}
+
+li.project_description {
+    list-style-type: none;
+    margin-left: .5em;
+    padding-bottom: .25em;
+}
+
+p.lab_description{
+    padding-bottom: .5em;
+}
+
+.subcontainer {
+    padding: .5em;
+}
+
+/*methods button, credit:https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible_methods {
+    color: #444;
+    cursor: pointer;
+    background-color: white;
+    margin: .25em;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible_methods:hover{
+    color:#ff9a8d;
+}
+
+.methods {
+    padding: 0 1em;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ol.methods_list {
+    list-style-type: lower-roman;
+    padding: .25em;
+    padding-left: 2em;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.research_pic_container{
+    padding: 1em;
+}
+
+.image_caption{
+    padding-top: .25em;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+img.research_pic {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border: 1px solid #ff9a8d;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Research - Pranav Patel</title>
+
+        <script src="https://kit.fontawesome.com/3bb5d3e263.js" crossorigin="anonymous"></script>    
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <div class="navigation">
+        <img src="images/logowhite.png" class="logo">
+    
+        <div class="right">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="./research.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    
+    </div>
+
+    <h1 class = "page_header"> Research</h1>
+
+    <!-- FEI -->
+    <div class = "container_research">
+        <h1 class = "lab"> Financial Economics Institute '24-Present</h1>
+        <p class = "lab_description"> Institute at Claremont McKenna College focusing on Computational Approaches to Financial Economics. PI: Dr. Benjamin Gillen.</p>
+        <ul class = "bp">
+            <li class = "title">On Subset Optimization</li>
+            <li class = "project_description"> Aiming to understand the efficacy of subset optimization, a novel approach to mean-variance portfolio optimization, as an asset allocation strategy. </li>
+        </ul>
+    </div>
+
+    <!--Feinberg-->
+    <div class = "container_research"> 
+        <h1 class = "lab"> Lubbe Lab '22-'24</h1>
+        <p class = "lab_description"> Human Genomics Lab at Northwestern Medicine studying genetic causes of motion-debilitating disease. PI: Dr. Steven Lubbe</p>
+        <ul class = "bp">
+            <div class = "subcontainer"> 
+                <li class = "title"> On the Relationship Between Rare Variants and Polygenic Risk Scoring </li>
+                <li class = "project_description"> Study focused on finding rare-variant contributors to Parkinsons' Disease as their low frequency makes them prone to marginalization in summary statistics. </li>
+                
+                <button type = "button" class = "collapsible_methods"> Methods </button>
+                <div class = "methods">
+                    <ol class = "methods_list">
+                        <li> Scoring of individuals in dataset using meta-5 summary statistics. Scoring was done via PRSice. IDs of affected individuals with low PRS scores were stored</li>
+
+                        <div class = "research_pic_container">
+                            <img src="images/unadjusted_QUANTILES_PLOT_2023-08-20.png" class = "research_pic">
+                            <p class = "image_caption">
+                                Quantile plot generated from PRS Scoring
+                            </p>
+                        </div>
+
+                        <li> CADD annotations done via annovar. Coding variants with high CADD scores (i.e., > 12.37) were moved into another file, along with variants annotated as nonsense SNPs, splice site errors, and indels. </li>
+
+                        <li> Quality-control on ampPD genetic data using PLINK. Filtered out variants with MAF > .05. Reintroduced variants from step 2 into dataset</li>
+
+                        <li>Rare Variant Analysis done via SkatO</li>
+                    </ol>
+                </div>
+            </div>
+                
+            <div class = "subcontainer"> 
+                <li class = "title"> On Genetic Contributers to Early-Onset Alzheimers Disease</li>
+                <li class = "project_description"> Genome-Wide Association aiming to elucidate rare variant contributors to Early-Onset Alzhemiers Disease.</li>
+            </div>
+
+            <div class = "subcontainer"> 
+                <li class = "title"> On Genetic Causes of Parkinsons'  </li>
+                <li class = "project_description"> Training study. Genome-wide association study to uncover genetic causes of Parkinsons' disease </li>
+            </div>
+        </ul>
+    </div>
+
+    <!--Drug Discovery-->
+    <div class = "container_research"> 
+        <h1 class = "lab"> Drug Discovery '21-'22</h1>
+        <p class = "lab_description"> Discovery Lab at IMSA focusing on compound growth using ligand-based drug design. PI: Dr. John Thurmond</p>
+
+        <ul class = "bp">
+            <div class = "subcontainer">
+                <li class="title"> COVID Moonshot </li>
+                <li class = "project_description"> PostEra crowd sourced project for the discovery of SARS-CoV-2 (CoVid) therapeutics </li>
+            </div>
+
+
+        </ul>
+
+        <div class = "subcontainer"></div>
+
+    </div>
+
+
+    <!--General Interests-->
+    <div class = "container_research"> 
+        <h1 class = "lab"> General Interest Projects</h1>
+        <ul class = "bp">
+            <div class = "subcontainer">
+                <li> <a class = "title_link"> Hotel Management System</a></li>
+                <li class = "project_description">Hotel Management System written in C++. Utilizes Object-Oriented Programming. Room Objects are stored in a Hash Table </li>
+            </div>
+            <div class = "subcontainer">
+                <li><a class = "title_link" href = "https://github.com/drip2hardpanu/ML-Projects/blob/main/stock_pred.py"> Stock Price Prediction </a></li>
+                <li class = "project_description">Long Short-Term Memory Model utilizing stock tickers via YFinance API to predict future stock prices. Written in Python</li>
+            </div>
+            <div class = "subcontainer">
+                <li> <a class = "title_link" > ML Model on Consumer Data to Output Likelihood of Investment </a> </li>
+                <li class = "project_description"> Classification Model written in Python using Tensorflow package </li>
+
+            </div>
+        </ul>
+
+    </div>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible_methods");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+        });
+    }
+</script>
